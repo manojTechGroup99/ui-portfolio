@@ -43,7 +43,7 @@ font-size: 15px;
         color: gold;
     }
     section{
-        height: 100px;
+        height: 600px;
     }
     footer{
         display:grid;
@@ -59,7 +59,7 @@ font-size: 15px;
         margin-bottom: 20px;
     }
     .footer-title{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         margin-bottom: 20px;
     }
@@ -68,8 +68,63 @@ font-size: 15px;
         margin-bottom: 15px;
     }
     aside span{
-        margin-right: 15px;
+        margin-right: 5px;
         font-size: 20px;
+    }
+    .women-fashion {
+        background-image: url("./images/women-fashion.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+    .men-fashion {
+        background-image: url("./images/mens-fashion.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+    .kids-fashion {
+background-image: url("./images/kids-fashion.jpg");
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0.5;
+
+    }
+    .kids-fashion:hover{
+        opacity: 1;
+    }
+    .women-fashion:hover{
+        opacity: 1;
+    }
+    .men-fashion:hover{
+        opacity: 1;
+    }
+    main {
+        height:500px;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-gap:4px;
+        margin-top: 5px;
+    }
+    .card-title {
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        margin-top: 150px;
     }
 </style>
 </head>
@@ -103,7 +158,44 @@ font-size: 15px;
         <span class="bi bi-lightning-fill"></span>
     </article>
     <section>
-
+<main>
+    <div class="women-fashion">
+    <div class="card">
+        <div class="card-title">
+         Women
+         </div>
+         <div class="card-footer">
+            <button>
+                shop women<span class="bi bi-arrow-right"></span>
+            </button>
+            </div>
+        </div>
+    </div>
+    <div class="men-fashion">
+        <div class="card">
+            <div class="card-title">
+             Men
+            </div>
+<div class="card-footer">
+    <button>
+        shop men<span class="bi bi-arrow-right"></span>
+    </button>
+        </div>
+        </div>
+    </div>
+    <div class="kids-fashion">
+        <div class="card">
+            <div class="card-title">
+                kids
+            </div>
+            <div class="card-footer">
+                <button>
+                    shop kids <span class="bi bi-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
     </section>
     <footer>
         <div>
